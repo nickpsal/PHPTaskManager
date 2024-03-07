@@ -1,5 +1,4 @@
 <!-- content -->
-<!-- daily prices -->
 <section id="index-daily-prices">
     <div class="container">
         <div class="error">
