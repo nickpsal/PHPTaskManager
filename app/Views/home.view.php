@@ -10,7 +10,7 @@
 	    </div>
         <div class="table-responsive">
 			<div class="logo-text">
-				<H1><a class="a" href="<?=URL?>home"><?=$data['title']?></a></H1>
+				<a class="a" href="<?=URL?>home"><?=$data['title']?></a>
 			</div>
 			<table id="myTable" class="table table-striped">
 				<div class="monthName">
