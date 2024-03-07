@@ -21,13 +21,16 @@ td, thead {
 
 .a{
 	text-decoration: none;
+	color:white;
 }
 
 .logo-text {
 	width: 360px;
+	height: 70px;
+	margin-bottom: 5px;
 	background-color: red;
+	color: white;
 	text-decoration: none;
-	color:white;
 	border: 1px solid black;
     padding: 8px;
 }

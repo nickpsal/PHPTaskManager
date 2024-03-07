@@ -13,6 +13,8 @@
             //get dd//MM/YYYY
             $dateFormatter->setPattern('dd/MM/yyyy');
             $data['currentDate'] = explode('/',$dateFormatter->format(date_create()));
+            $data['prev'] = $data['currentDate'][1] - 1;
+            $data['next'] = $data['currentDate'][1] + 1;
             $data['currentMonthName'] = getMonthName($data['currentDate'][1]);
             $tasks->createDatabaseTaskTable();
             $data['tasks'] = $tasks->find_all_data_from_db();
@@ -31,6 +33,8 @@
             $dateFormatter->setPattern('dd/MM/yyyy');
             $data['currentDate'] = explode('/',$dateFormatter->format(date_create()));
             $data['currentDate'][1] = $_GET['month'];
+            $data['prev'] = $data['currentDate'][1] - 1;
+            $data['next'] = $data['currentDate'][1] + 1;
             $data['currentMonthName'] = getMonthName($data['currentDate'][1]);
             $tasks->createDatabaseTaskTable();
             $data['tasks'] = $tasks->find_all_data_from_db();
