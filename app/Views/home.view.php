@@ -12,7 +12,6 @@
 			<div class="logo-text">
 				<H1><a class="a" href="<?=URL?>home"><?=$data['title']?></a></H1>
 			</div>
-			<a href="#" class="btn btn-primary" type="button">Add New</a>
 			<table id="myTable" class="table table-striped">
 				<div class="monthName">
 					<a href="<?=URL?>home/show?month=<?=$data['prev']?>" class="btn btn-primary">◄</a>
