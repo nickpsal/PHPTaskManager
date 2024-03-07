@@ -1,0 +1,30 @@
+.error{
+	display: inline-block;
+	width: 640px;
+	background-color: gray;
+	color: white;
+	margin: 0px 0px 4px 20px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, thead {
+	border: 1px solid black;
+    padding: 8px;
+    text-align: center; /* Center align text in td elements */
+}
+
+.monthName {
+	display: flex;
+	justify-content: center; /* Aligns items horizontally at the center */
+	align-items: center; /* Aligns items vertically at the center */
+	margin-top: 5px;
+	border: 1px solid black;
+    padding: 8px;
+}
+

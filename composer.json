@@ -1,0 +1,20 @@
+{
+    "name": "nickp/php_mvc_framework",
+    "autoload": {
+        "classmap": [
+            "app/Core",
+            "app/Models"            
+        ],
+        "files": [
+            "app/Core/config.php",
+            "app/Core/functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "NIKOLAOS PSALTAKHS",
+            "email": "nickpsal@hotmail.com"
+        }
+    ],
+    "require": {}
+}
