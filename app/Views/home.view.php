@@ -10,7 +10,7 @@
 		    ?>
 	    </div>
         <div class="table-responsive">
-			<H1><?=$data['title']?></H1>
+			<a href="<?=URL?>home"><H1><?=$data['title']?></H1></a>
 			<a href="#" class="btn btn-primary" type="button">Add New</a>
 			<table id="myTable" class="table table-striped">
 				<div class="monthName">
