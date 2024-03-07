@@ -4,7 +4,7 @@
         public function index($data = [])
         {
             $tasks = new Task();
-            $data['title'] = 'All Tasks';
+            $data['title'] = 'Task Manager V1.0';
             date_default_timezone_set('Europe/Athens');
             $dateFormatter = new IntlDateFormatter('el_GR', IntlDateFormatter::FULL, IntlDateFormatter::NONE);
             //get day of the week
@@ -21,7 +21,7 @@
 
         public function show($data = []) {
             $tasks = new Task();
-            $data['title'] = 'All Tasks';
+            $data['title'] = 'Task Manager V1.0';
             date_default_timezone_set('Europe/Athens');
             $dateFormatter = new IntlDateFormatter('el_GR', IntlDateFormatter::FULL, IntlDateFormatter::NONE);
             //get day of the week
@@ -42,7 +42,7 @@
             $request = new Request();
             $tasks = new Task();
             if ($request->is_get()) {
-                $data['title'] = 'All Tasks';
+                $data['title'] = 'Task Manager V1.0';
                 $this->view('addupdatetask', $data); 
             }else {
 
@@ -54,7 +54,7 @@
             $request = new Request();
             $tasks = new Task();
             if ($request->is_get()) {
-                $data['title'] = 'Update Task';
+                $data['title'] = 'Task Manager V1.0';
                 $query['id'] = $_GET['id'];
                 $data['data'] = $tasks->get_first_query_db($query);
                 if (!empty($data['data'])) {
@@ -71,7 +71,7 @@
             $request = new Request();
             $tasks = new Task();
             if ($request->is_get()) {
-                $data['title'] = 'Update Task';
+                $data['title'] = 'Task Manager V1.0';
                 $query['id'] = $_GET['id'];
                 $data['data'] = $tasks->get_first_query_db($query);
                 if (!empty($data['data'])) {

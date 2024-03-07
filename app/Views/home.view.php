@@ -10,7 +10,7 @@
 		    ?>
 	    </div>
         <div class="table-responsive">
-			<a href="<?=URL?>home"><H1><?=$data['title']?></H1></a>
+			<a class="a" href="<?=URL?>home"><H1 class="logo-text"><?=$data['title']?></H1></a>
 			<a href="#" class="btn btn-primary" type="button">Add New</a>
 			<table id="myTable" class="table table-striped">
 				<div class="monthName">
@@ -55,9 +55,10 @@
 								$taskMonth = $date->format("m");
 								$taskDay = $date->format("d");
 								if ($day == $taskDay && $data['currentDate'][1] == $taskMonth && $data['currentDate'][2] == $taskYear) {
-									echo $tasks->taskName;
-								}else {
-									echo "No task";
+									?> <a href="#" class="btn btn-primary"><?=$tasks->taskName?></a> 
+								<?php }else {
+									?> <a href="#" class="btn btn-primary">New Task</a> 
+									<?php
 								}
 							}
 							echo "</td>";

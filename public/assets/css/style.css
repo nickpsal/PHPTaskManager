@@ -19,6 +19,19 @@ td, thead {
     text-align: center; /* Center align text in td elements */
 }
 
+.a{
+	text-decoration: none;
+}
+
+.logo-text {
+	width: 360px;
+	background-color: red;
+	text-decoration: none;
+	color:white;
+	border: 1px solid black;
+    padding: 8px;
+}
+
 .monthName {
 	display: flex;
 	justify-content: center; /* Aligns items horizontally at the center */
