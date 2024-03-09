@@ -81,6 +81,7 @@
                     redirect('home');
                 }
             }else {
+                $data['taskName'] = $_POST['taskName'];
                 $data['taskDescription'] = $_POST['taskDescription'];
                 $data['taskSetupDate'] = $_POST['taskSetupDate'];
                 $data['taskScheduleDate'] = $_POST['taskScheduleDate'];
@@ -117,9 +118,9 @@
                 $data['data'] = $tasks->get_first_query_db($query);
                 if (!empty($data['data'])) {
                     $tasks->delete_data_from_db($query['id']);
+                    message("Task deleted from Schedule Succesfully");
                     redirect('home');
                 }else {
-                    message("Task deleted from Schedule Succesfully");
                     redirect('home');
                 }
             }

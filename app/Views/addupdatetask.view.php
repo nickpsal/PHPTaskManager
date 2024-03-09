@@ -43,7 +43,7 @@
                         <?php 
                             if (isset($data['data'])) {
                                 ?>
-                                    <a href="<?=URL?>home/delete?id=<?=$data['data']->Id?>" class="btn btn-primary" type="button">Return</a>
+                                    <a href="<?=URL?>home/delete?id=<?=$data['data']->Id?>" class="btn btn-primary" type="button">Delete</a>
                                 <?php
                             }
                         ?>
