@@ -15,9 +15,9 @@
 			<a href="<?=URL?>home/add" class="btn btn-primary">New Task</a> 
 			<table id="myTable" class="table table-striped">
 				<div class="monthName">
-					<a href="<?=URL?>home/show?month=<?=$data['prev']?>" class="btn btn-primary">◄</a>
+					<a href="<?=URL?>home?month=<?=$data['prev']?>" class="btn btn-primary">◄</a>
 					<h3><?=$data['currentMonthName'] . " - " . $data['currentDate'][2]?></h3>
-					<a href="<?=URL?>home/show?month=<?=$data['next']?>" class="btn btn-primary">►</a>
+					<a href="<?=URL?>home?month=<?=$data['next']?>" class="btn btn-primary">►</a>
 				</div>
 				<thead>
 					<tr>

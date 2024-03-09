@@ -14,32 +14,15 @@
             //get dd//MM/YYYY
             $dateFormatter->setPattern('dd/MM/yyyy');
             $data['currentDate'] = explode('/',$dateFormatter->format(date_create()));
+            if (isset($_GET['month'])) {
+                $data['currentDate'][0] = 1;
+                $data['currentDate'][1] = $_GET['month'];
+            }
             $data['prev'] = $data['currentDate'][1] - 1;
             $data['next'] = $data['currentDate'][1] + 1;
             $data['currentMonthName'] = getMonthName($data['currentDate'][1]);
             $data['tasks'] = $tasks->find_all_data_from_db();
             $this->view('home', $data);
-        }
-
-        public function show($data = []) {
-            $tasks = new Task();
-            $data['title'] = 'Task Manager V1.0';
-            date_default_timezone_set('Europe/Athens');
-            $dateFormatter = new IntlDateFormatter('el_GR', IntlDateFormatter::FULL, IntlDateFormatter::NONE);
-            //get day of the week
-            $dateFormatter->setPattern('EEEE');
-            $data['currentday'] = $dateFormatter->format(date_create());
-            //get dd//MM/YYYY
-            $dateFormatter->setPattern('dd/MM/yyyy');
-            $data['currentDate'] = explode('/',$dateFormatter->format(date_create()));
-            $data['currentDate'][0] = 1;
-            $data['currentDate'][1] = $_GET['month'];
-            $data['prev'] = $data['currentDate'][1] - 1;
-            $data['next'] = $data['currentDate'][1] + 1;
-            $data['currentMonthName'] = getMonthName($data['currentDate'][1]);
-            $tasks->createDatabaseTaskTable();
-            $data['tasks'] = $tasks->find_all_data_from_db();
-            $this->view('home', $data); 
         }
 
         public function add($data = [])
