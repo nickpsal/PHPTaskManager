@@ -17,10 +17,10 @@
         define('DB_NAME', 'taskmanagerdb');
     }else {
         //live server
-        define('ROOT', $_SERVER['HTTP_HOST'] . '/public');
-        define('URL', $_SERVER['HTTP_HOST']);
+        define('ROOT', 'https://'. $_SERVER['HTTP_HOST'] . '/taskmanager/public');
+        define('URL', 'https://' .  $_SERVER['HTTP_HOST'] .  '/taskmanager');
         define('DB_HOST', 'localhost');
-        define('DB_USER', 'root');
-        define('DB_PASS', 'toor');
-        define('DB_NAME', 'psaltakis_nikolaos_ge3_db');
+        define('DB_USER', 'koyinta588443_taskManager');
+        define('DB_PASS', 'gbrCBRM2908');
+        define('DB_NAME', 'koyinta588443_taskManager');
     }
