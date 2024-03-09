@@ -8,7 +8,7 @@
         protected $offset = 0;
         protected $update_id = 'id';
         protected $allowedColumns = [
-            'taskName ',
+            'taskName',
             'taskDescription',
             'taskSetupDate',
             'taskScheduleDate',

@@ -12,6 +12,7 @@
 			<div class="logo-text">
 				<a class="a" href="<?=URL?>home"><?=$data['title']?></a>
 			</div>
+			<a href="<?=URL?>home/add" class="btn btn-primary">New Task</a> 
 			<table id="myTable" class="table table-striped">
 				<div class="monthName">
 					<a href="<?=URL?>home/show?month=<?=$data['prev']?>" class="btn btn-primary">◄</a>
@@ -51,12 +52,11 @@
 								$taskMonth = $date->format("m");
 								$taskDay = $date->format("d");
 								if ($day == $taskDay && $data['currentDate'][1] == $taskMonth && $data['currentDate'][2] == $taskYear) {
-									?> <a href="#" class="btn btn-primary"><?=$tasks->taskName?></a> 
-								<?php }else {
-									?> <a href="#" class="btn btn-primary">New Task</a> 
-									<?php
-								}
+									?> <a href="<?=URL?>home/update?id=<?=$tasks->Id?>" class="btn btn-primary"><?=$tasks->taskName?></a><br/> 
+								<?php }
 							}
+							?> 
+							<?php
 							echo "</td>";
 							$day_of_week++;
 						}
