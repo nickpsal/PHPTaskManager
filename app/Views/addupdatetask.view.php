@@ -16,7 +16,7 @@
                     </div>
                     <div class="form-group">
                         <label for="taskDescription">Task Desc: </label>
-                        <input type="text" class="form-control" name="taskDescription" placeholder="Task Desc" value="<?php echo isset($data['data']) ? $data['data']->taskDescription : ''; ?>" required />
+                        <input type="text" class="form-control" name="taskDescription" placeholder="Task Desc" value="<?php echo isset($data['data']) ? $data['data']->taskDescription : ''; ?>" />
                     </div>
                     <div class="form-group">
                         <label for="taskSetupDate">Task Setup Date: </label>
@@ -28,7 +28,7 @@
                     </div>
                     <div class="form-group">
                         <label for="taskStartTime">task Start Time: </label>
-                        <input type="time" class="form-control" name="taskStartTime" placeholder="HH:MM" required value="<?php echo isset($data['data']) ? $data['data']->taskStartTime : ''; ?>" />
+                        <input type="time" class="form-control" name="taskStartTime" placeholder="HH:MM" required value="<?php echo isset($data['data']) ? $data['data']->taskStartTime : ''; ?>" required />
                     </div>
                     <div class="form-group">
                         <label for="TaskDuration">Task Duration: </label>
